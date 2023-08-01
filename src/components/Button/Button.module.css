@@ -1,0 +1,30 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 16px 24px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background-color: transparent;
+  font-family: 'OpenSans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(#fff, 0.5);
+  }
+}
+
+.yandex {
+  gap: 12px;
+  background: #000;
+}
+
+.logout {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
