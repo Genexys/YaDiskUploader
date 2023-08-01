@@ -102,7 +102,8 @@ const Dropzone: React.FC<TProps> = ({ token }) => {
         <ul className={styles.progressList}>
           {Object.entries(uploadProgress).map(([fileName, progress]) => (
             <li className={styles.progressItem} key={fileName}>
-              <span>{fileName}:</span> <span>{progress}%</span>
+              <span className={styles.filename}>{fileName}:</span>{' '}
+              <span className={styles.progress}>{progress}%</span>
             </li>
           ))}
         </ul>
