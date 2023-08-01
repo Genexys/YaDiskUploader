@@ -3,6 +3,7 @@ import Login from './containers/Login';
 import Logout from './containers/Logout';
 import { useAuthContext } from './context/authContext';
 import { ToastContainer } from 'react-toastify';
+import { Analytics } from '@vercel/analytics/react';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from './App.module.css';
 
@@ -21,6 +22,7 @@ const App = () => {
       )}
 
       <ToastContainer position="top-left" />
+      <Analytics />
     </div>
   );
 };
